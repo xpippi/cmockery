@@ -18,9 +18,9 @@ jobs:
       run: ./configure
 
     - name: Install dependencies
-      run: make -j99 check
+      run: make -j99 all
 
-    - name: Run check
+    - name: Run all
       run: make .PHONY -j99
 
     - name: Run distcheck
